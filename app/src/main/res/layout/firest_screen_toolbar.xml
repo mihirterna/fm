@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/tool_bar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardview_light_background"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="75dp"
+                android:text="SEARCH BAR WILL BE HERE" />
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ImageButton
+                android:id="@+id/icon_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_margin="25dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Videos"
+                android:padding="20dp"
+                android:src="@drawable/icon_video" />
+
+            <ImageButton
+                android:id="@+id/icon_download"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="25dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Downloads"
+                android:padding="20dp"
+                android:src="@drawable/icon_download" />
+
+            <ImageButton
+                android:id="@+id/icon_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="25dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Images"
+                android:padding="20dp"
+                android:src="@drawable/icon_image" />
+
+            <ImageButton
+                android:id="@+id/icon_compress_files"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="25dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Zips"
+                android:padding="20dp"
+                android:src="@drawable/icon_compress" />
+
+            <ImageButton
+                android:id="@+id/icon_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="25dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Music"
+                android:padding="20dp"
+                android:src="@drawable/icon_audio" />
+
+            <ImageButton
+                android:id="@+id/icon_apks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="25dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Apks"
+                android:padding="20dp"
+                android:src="@drawable/icon_apk" />
+
+            <ImageButton
+                android:id="@+id/icon_document"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="25dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Documents"
+                android:padding="20dp"
+                android:src="@drawable/icon_document" />
+
+            <ImageButton
+                android:id="@+id/icon_favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="25dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Favourites"
+                android:padding="20dp"
+                android:src="@drawable/icon_favourite" />
+
+            <ImageButton
+                android:id="@+id/icon_recent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="25dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="Recent"
+                android:padding="20dp"
+                android:src="@drawable/icon_recent" />
+        </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/relative_internal"
+                android:background="@drawable/shadow_effect"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="Internal Storage" />
+                <ProgressBar
+                    android:id="@+id/storage_internal_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="15dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_shape"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circular_progress_bar" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    style="@style/Base.TextAppearance.AppCompat"
+                    android:id="@+id/tv_internal_inside_progress"
+                    android:text="0"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/relative_sdCard"
+                android:background="@drawable/shadow_effect"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="SD Card" />
+                <ProgressBar
+                    android:id="@+id/storage_sdcard_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="15dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_shape"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circular_progress_bar" />
+                <TextView
+                    android:id="@+id/tv_sdcard_inside_progress"
+                    style="@style/Base.TextAppearance.AppCompat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerInParent="true"
+                    android:text="0" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/relative_otg"
+                android:background="@drawable/shadow_effect"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <TextView
+                    style="@style/Base.TextAppearance.AppCompat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="OTG Storage" />
+                <ProgressBar
+                    android:id="@+id/storage_otg_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_margin="15dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_shape"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/circular_progress_bar" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    style="@style/Base.TextAppearance.AppCompat"
+                    android:id="@+id/tv_otg_inside_progress"
+                    android:text="0"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="CLEANER, FILE TRANSFER, RECEIVER" />
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</android.support.design.widget.AppBarLayout>
